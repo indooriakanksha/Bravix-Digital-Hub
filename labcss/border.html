@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container1{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            
+        }
+        .container2{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 30px;
+            
+        }
+        .container3{
+            display: flex;
+            justify-content:center;
+            gap:30px;
+                    
+        }
+        h2{
+            text-align: center;
+        
+        }
+        .solid{
+            border:5px solid red;
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: rgb(247, 200, 200);
+            text-align: center;
+            
+        }
+        .dashed{
+            border:5px dashed blue;
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: lightgreen;
+            text-align: center;
+        }
+        .dotted{
+            border:5px dotted green;
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color:beige;
+            text-align: center;
+        }
+        .double{
+            border:5px double purple;
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: lightp;
+            text-align: center;
+        }
+        .groove{
+            border:5px groove yellow;
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: lightsalmon;
+            text-align: center;
+        }
+        .ridge{
+            border:5px ridge brown;
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: rgb(247, 200, 200);
+            text-align: center;
+        }
+        .inset{
+            border:5px inset rgb(4, 95, 80);
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: rgb(165, 234, 199);
+            text-align: center;
+        }
+        .outside{
+            border:5px outset red;
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: rgb(247, 200, 200);
+            text-align: center;
+        }
+        .none{
+            
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: rgb(247, 200, 200);
+            text-align: center;
+            box-shadow: 2px 3px 7px lightgray;
+        }   
+        .hidden{         
+            width:150px;
+            padding:15px;
+            border-radius: 10px;
+            background-color: rgb(247, 200, 200);
+            text-align: center;
+            box-shadow: 2px 3px 7px lightgray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>CSS Border Styles</h2>
+    <div class="container1">
+     <div class="solid">
+        <p><b>Solid Border</b></p>
+
+     </div>
+     <div class="dashed">
+        <p><b>Dashed Border</b></p>
+
+     </div>
+     <div class="dotted">
+        <p><b>Dotted Border</b></p>
+
+     </div>
+     <div class="double">
+        <p><b>Double Border</b></p>
+
+     </div>
+    </div>
+    <div class="container2">
+       <div class="groove">
+        <p><b>Groove Border</b></p>
+       </div>
+       <div class="ridge">
+        <p><b>Ridge Border</b></p>
+       </div>
+       <div class="inset">
+        <p><b>Inset Border</b></p>
+       </div>
+        <div class="outside">
+        <p><b>Outset Border</b></p>
+       </div>
+    </div>
+
+
+    <div class="container3">
+     <div class="none">
+        <p><b>none Border</b></p>
+       </div>
+   <div class="hidden">
+        <p><b>Hidden Border</b></p>
+       </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+           box-sizing: border-box;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color:aqua;
+            margin-top: 80px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            margin-top: 50px;
+            background-color: white;
+            
+        
+            box-shadow: 0px 0px 10px gray;
+            border-radius:10px;
+            width: 400px;
+
+            padding: 2rem;
+    
+        }
+        form{
+            margin: auto;
+        }
+        label{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+
+            
+        }
+        input{
+            
+            padding: 10px;
+            border:1px solid gray;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+            
+        }
+        button{
+            margin-top: 25px;
+            
+            padding: 12px;
+            width:100%;
+            
+            background-color: blue;
+            color: #eeeeee;
+            cursor: pointer;
+            font-size: 5px;
+            border: none;
+            font-size: 1rem;
+            border-radius: 10px;
+            
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 25px;
+            color: rgb(97, 97, 178);
+        }
+        input::placeholder{
+            color: gray;
+        }
+        input:focus{
+            outline: none;
+            border: 2px solid blue;
+        }
+        input:read-only{
+            background-color: #eeeeee;
+            cursor: not-allowed;
+        }
+        input:required{
+            border-left: 4px solid blue;
+        }
+        input:valid{
+           border-color: green;
+        }
+        input:invalid{
+            border-color: red;
+        }
+      .terms{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        margin-top: 20px;
+      }
+      terms:checked{
+         background-color: green;
+      }
+     .terms input{
+        width:auto ;
+     }
+     input[type="number"]:in-range{
+        background-color: #d8ffd8;
+     }
+     input[type="number"]:out-of-range{
+        background-color: #d89e9e;
+     }
+     #checked:checked{
+        accent-color: green
+     }
+     #check:checked+label{
+        color:green;
+        
+     }
+     button:hover{
+        background-color: green;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+    <h1>Student Registration Form</h1>
+    <label>Student ID</label>
+    <input type="text" value="STD2026001" readonly>
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter Full Name"  required>
+    <label>Email</label>
+    <input type="email" placeholder="Enter Email" required>
+    <label>Age</label>
+    <input type="number" placeholder="Enter age" min="18" max="30" required >
+    <div class="terms">
+    <input type="checkbox" id="check">
+    <label for="check">I Accept Terms & Conditions</label>
+    
+
+    </div>
+    <button>Register</button>
+        </form>
+    </div>
+</body>
+</html>
+

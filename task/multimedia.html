@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .header{
+        
+        background-color: blue;
+        color:white;
+        padding:30px;
+        text-align:center;
+        
+      }
+      body{
+        background-color: lightgray;
+        padding:30px;
+      }
+      marquee{
+        padding:12px;
+        font-size: 17px;
+        font-weight: bold;
+        color:white;
+      }
+      .container{
+        width:900px;
+        margin:auto;
+        background-color: rgb(176, 121, 226);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 10px 30px rgba(0, 0,0, 2);
+      }
+    
+
+     
+     h1{
+      font-size: 40px;
+      letter-spacing: 2px;
+     }
+     .header p{
+         margin-top: 10px;
+        font-size: 18px;
+     }
+   .banner{
+    padding:20px;
+   }
+   .banner img{
+    width:100%;
+    height:350px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px grey;
+   }
+   .section{
+    padding:30px;
+    text-align: center;
+   }
+   .section h2{
+    color:rgb(55, 40, 255);
+    margin-bottom:12px;
+   }
+   .section p{
+    color:rgb(74, 68, 68)
+  
+   }
+   video{
+    width:100%;
+    height:420Px;
+    border-radius: 12px;
+    border:1px solid gray;
+    background:black;
+    box-shadow: 0px 10px 10px gray;
+   }
+   audio{
+    width:100%
+   }
+   iframe{
+    width:100%;
+    height:420px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px gray;
+     border: none;
+   }
+   .formats{
+    display:flex;
+    justify-content: space-evenly;
+    gap:20px;
+    padding:30px;
+   }
+   .card{
+    width:45%;
+    border-radius: 10px;
+    border:2px solid ;
+    background:white;
+    padding:20px;
+    
+   }
+   .card h3{
+  color:rgb(99, 107, 225);
+  margin-bottom: 15px;
+
+   }
+   
+   
+   .card li{
+    padding:10px;
+    border-bottom: 1px solid #D1D5DB ;
+    color:black;
+    font-weight: bold;
+   }
+   .about{
+    padding:30px;
+    text-align: center;
+   }
+   .about h2{
+    color: blue;
+    margin-bottom: 15px;
+   }
+   .about p{
+    line-height: 30px;
+    font-size: 17px;
+   }
+   hr{
+    width:90%;
+    margin:20px auto;
+    
+   }
+   .footer{
+    background-color: blue;
+    color:white;
+    padding:18px;
+    font-size: 17px;
+    text-align: center;
+    
+    
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+      <h1>🎬 Multimedia Showcase</h1>
+      <p>Learn • Watch • Listen • Explore</p>
+    </div>
+
+    <marquee direction="left" scrollamount="8" behaviour="scroll" bgcolor="#BFDFE" loop="5">
+      🎉 Welcome to our Multimedia Showcase Website | Learn HTML Video, Audio & Iframe Concepts Easily 🚀
+
+    </marquee>
+    <div class="banner">
+      <img src="./images/MMedia.jpg" alt="Multimedia banner">
+    </div>
+    <div class="section">
+      <h2>🎥 Featured Video</h2>
+      <p>Watch the featured multimedia video below.</p>
+      <video src="./videos/mixkit-waterfall-in-forest-2213-hd-ready.mp4" width="100%" height="420px" controls></video>
+      <hr>
+    </div>
+
+    <div class="section">
+     <h2>🎵 Featured Audio</h2>
+     <p>Listen to our multimedia audio demonstration</p>
+     <audio src="./audios/Tujhe Kitna Chahein Aur (Film Version) - NaaSongs.mp3" controls></audio>
+    </div>
+    <hr>
+    <div class="section">
+     <h2>📺 Embedded YouTube Video</h2>
+     <p>Watch our YouTube multimedia tutorial.</p>
+     <iframe width="700" height="400" src="https://www.youtube.com/embed/lGKGDxwvrEQ" title="Yoytube video player" allowfullscreen>
+      
+     </iframe>
+    </div>
+    <hr>
+    <div class="formats">
+      <div class="card">
+     <h3>🎞 Supported Video Formats</h3>
+     <ul>
+      <li>mp4</li>
+      <li>avi</li>
+      <li>ogg</li>
+      <li>webm</li>
+     </ul>
+      </div>
+      <div class="card">
+      <h3>🎵 Supported Audio Formats</h3>
+      <ul>
+      
+        <li>mp3</li>
+        <li>wav</li>
+        <li>ogg</li>
+        <li>midi</li>
+      </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="about">
+     <h2>📖 About Multimedia</h2>
+     <p>HTML Multimedia allows us to display videos, play audio files, embed YouTube videos, and create interactive
+       multimedia webpages. Modern HTML mainly uses the <strong>video</strong>, <strong>audio</strong>, and <strong>iframe</strong> for multimedia 
+       content</p>
+    </div>
+    <hr>
+    <div class="footer">
+     <p>&copy; 2026 Multimedia Showcase Website</p>
+    </div>
+    </div>
+</body>
+</html>

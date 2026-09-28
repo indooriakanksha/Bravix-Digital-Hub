@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width:270px;
+            border:3px solid blue;
+            border-radius: 15px;
+            box-shadow: 5px 6px 5px lightblue;
+            height:60vh;
+            margin: auto; 
+            text-align: center;
+            padding-top: 10px ;
+            
+            overflow: hidden;
+            
+        }
+        img{
+            border-radius: 50%;
+            width:80px;
+            text-align:center;
+            border:3px solid blue ;
+            margin-top: 10px;
+        }
+        .list{
+            display: flex;
+            gap:50px;
+              border-bottom: 1px solid lightgray;
+              list-style-type: none;
+              box-shadow: 0px 0px 1px gray;
+        }
+       .list li{
+              border-bottom: 1px solid lightgray;
+              box-shadow: 0px 0px 1px gray;
+               list-style-type: none;
+               align-items:center;
+               text-align: justify;
+               padding:5px;
+        }
+        .nareshit{
+            width:200px;
+            padding: 20px;
+            box-shadow: 2px 7px 6px gray;
+            border-radius: 20px;
+            margin: auto;
+        }
+        p{
+            color: red;
+        }
+        .p{
+            color: blue;
+            margin-top: 10px;
+            
+        }
+        .row {
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 0;
+  text-align: justify;
+}
+
+.label,
+.value {
+  width: 50%;
+}
+
+.label {
+    margin-left: 10px;
+  font-weight: bold;
+}
+button{
+    width:80%;
+    padding: 7px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nareshit">
+        <p>NARESH IT</p>
+        </div>
+        <p class="p">Naresh it</p>
+        <img src="./images/student.jpg">
+    <div class="details">
+
+  <div class="row">
+    <div class="label">Name</div>
+    <div class="value">Bharath</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Roll No</div>
+    <div class="value">23JFS101</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Course</div>
+    <div class="value">Java Full Stack</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Blood Group</div>
+    <div class="value">O+</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Phone</div>
+    <div class="value">7093******</div>
+  </div>
+
+</div>
+
+        <button>Student Identify Card</button>
+
+    </div>
+</body>
+</html>

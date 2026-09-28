@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+          background-color: rgb(142, 142, 213);
+          
+          
+        }
+        .container{
+          width:450px;
+         text-align: center;
+         background-color: white;
+         margin: 40px auto;
+         padding:25px;
+         box-shadow: 0px 0px 10px gray;
+
+        }
+        h1{
+            margin-bottom: 10px;
+            color:blueviolet
+        }
+        p{
+            margin-top: 15px;
+            margin-bottom:6px;
+            font-weight: bold;
+
+        }
+        input{
+            width:79%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>TECHSTORE</h1>
+    <h3>Vendor Registration Portal</h3>
+    <form align="center">
+    <p>Vender Name</p>
+    <input type="text" name="name" placeholder="Enter vender Name" maxlength="30" minlength="3">
+    <br>
+    <p>Passward</p>
+    <input type="password" name="password" placeholder="Enter passward">
+    <br>
+    <p>Business Email</p>
+    <input type="email" name="email" placeholder="Enter Email">
+    <br>
+    <p>Company Website</p>
+    <input type="url" name="url" placeholder="https://example.com" required>
+    <p>Search Products</p>
+    <input type="text" naeme="products" placeholder="Search Products" list="products">
+    <datalist id="products">
+        <option>Mobiles</option>
+        <option>Loptaps</option>
+        <option>HeadPhones</option>
+        <option>Gaming</option>
+    </datalist>
+    <p>Quantity</p>
+    <input type="number" name="quantity" value="1">
+    <p>Company Website</p>
+    <input type="text" name="website" value="TV1024">
+    <p>GST Number</p>
+    <input type="text" name="name" placeholder="29ABCDE1234F1Z5" disabled>
+    <br>
+    <br>
+    <button>Register vender</button>
+
+    </form>
+    </div>
+</body>
+</html>

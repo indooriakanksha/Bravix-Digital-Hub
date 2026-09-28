@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(157, 145, 145);
+        }
+         h1{
+            text-align: center;
+            margin-top: 170px;
+        }
+        section{
+            height:500px;
+            background-image: url(../labcss/images/OIP.webp);
+            background-size: cover;
+            background-position: center;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           background-color: white;
+        }
+        .scroll-bg{
+            background-attachment: scroll;
+        }
+        .fixed-bg{
+            background-attachment: fixed;
+        }
+        .local-bg{
+            width:700px;
+            height:500px;
+            margin: auto;
+            background-image: url(../labcss/images/OIP.webp);
+           background-position: center;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           background-repeat: no-repeat;
+           background-attachment:local;
+           background-size: cover;
+           background-color: white;
+           overflow: auto;
+           border: 5px solid black;
+
+        }
+        .content{
+            height:300px;
+            padding:30px;
+        }
+        .head1{
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+       .head2{
+           font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            
+       }
+      nav{
+        background-color: rgb(212, 151, 71);
+        color: black;
+        display: flex;
+        justify-content: space-evenly;
+        padding:30px;
+        font-size: 20px;
+        text-decoration: dotted;
+        font-weight:bold ;
+        position:sticky;
+      }
+      
+    </style>
+</head>
+<body>
+    <span class="head1">CSS Background Attachment</span>
+    <nav>
+        <span>Home</span>
+        <span>card</span>
+        <span>search</span>
+        <soan>dolls</soan>
+    </nav>
+    <section class="scroll-bg">
+        <h1>Background-attachment: scroll</h1>
+    </section>
+
+    <div class="content">
+        <p>The default value of background-attachment is scroll. The background image moves together with the page whenever the user scrolls.
+
+      Both the text and the background image scroll at the same speed. The image always stays attached to the element itself.
+
+      This behaviour is commonly used for normal website sections where no special scrolling effect is required.
+
+      Since this is the default behaviour, you usually don't need to write background-attachment: scroll; unless you want to make it explicit.</p>
+    </div>
+
+    <section class="fixed-bg">
+    <h1>background-attachment: fixed
+</h1>
+    </section>
+
+    <div class="content">
+        <p>The background-attachment: fixed property keeps the background image fixed relative to the browser window.
+
+        When the user scrolls the page, the content moves, but the background image remains in the same position, creating a parallax-like scrolling effect.
+
+          This effect is commonly used in landing pages, travel websites, portfolios, and modern UI designs to make sections more attractive.
+
+          Be careful while using fixed backgrounds because some mobile browsers may not fully support this behaviour.
+
+</p>
+    </div>
+
+    <h1 class="head2">background-attachment: local
+</h1>
+
+    <div class="local-bg">
+      <p>The background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the difference in background movement.
+     The background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the difference
+     The background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the differenceThe background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the differenceThe background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the differenceThe background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the differenceThe background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the differenceThe background-attachment: local property makes the background image scroll together with the content inside this container.
+
+        This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+
+        As you scroll inside this box, both the text and the background image move together.
+
+       Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+
+       Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+
+          Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+     This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+
+     Try comparing all three values — scroll, fixed, and local — to understand the difference
+    </p>
+    </div>
+
+
+</body>
+</html>

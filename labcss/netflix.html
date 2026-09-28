@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-color: black;
+        }
+        .container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+           
+            padding: 30px;
+          gap:20px;
+        }
+        .card1{
+            width:300px;
+            border:3px solid red;
+            height: 60vh;
+            padding:50px;
+            color: white; 
+            border-radius: 30px;  
+            background-color:rgb(70, 62, 62);
+               
+          }
+          .card2{
+             width:300px;
+            border:3px solid red;
+            height: 70vh;
+            padding:50px;
+            color: white; 
+            border-radius: 30px; 
+            background-color:rgb(70, 62, 62);
+          }
+          .card3{
+            width:300px;
+            border:2px solid yellow;
+            height: 75vh;
+            padding:50px;
+            color: white; 
+            border-radius: 30px;   
+            background-color:rgb(70, 62, 62);
+            box-shadow: 2px 4px 20px yellow;
+
+          }
+          ul{
+            list-style: none;
+          }
+     h1{
+        color: white;
+        text-align: center;
+     }
+     .logo{
+        text-align: center;
+        color: rgb(217, 25, 25);
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 10px;
+
+     }
+     .plan{
+        text-align:center;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 30px;
+
+
+     }
+     .price{
+        text-align: center;
+        color: rgb(203, 0, 0);
+         font-size: 35px;
+        font-weight: bold;
+     }
+     .badge{
+        background-color: yellow;
+        text-align: center;
+        color: black;
+        width:150px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: 50px;
+    
+     }
+     button{
+         background-color: green;
+         color:white;
+         width:250px;
+         padding:15px;
+         margin-top: 10px;
+         border-radius: 15px;
+     }
+      button:hover{
+        background-color: rgb(45, 87, 45);
+      }
+      .card3:hover{
+        box-shadow: none;
+      }
+    li{
+        border-bottom: 1px solid rgb(117, 102, 102);
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <header><h1>Netflix Subscription Plans</h1></header>
+    <div class="container">
+        <section class="card1">
+            <div class="logo">NETFLIX</div>
+            <h2 class="plan">Basic Plan</h2>
+            <div class="price">₹199 / Month</div>
+            <ul>
+                <li>✔ Full HD Quality</li>
+                
+                <li>✔ Watch on 2 Devices</li>
+                
+                <li>✔ Unlimited Movies & Shows</li>
+                
+                <li>✔ Download Offline</li>
+                
+                <li>✔ No Cancellation Charges</li>
+            </ul>
+              
+          <button>Subscribe</button>
+        </section>
+        <section class="card2">
+        <div class="logo">NETFLIX</div>
+            <h2 class="plan">Basic Plan</h2>
+            <div class="price">₹499 / Month</div>
+            <ul>
+                <li>✔ Full HD Quality</li>
+                
+                <li>✔ Watch on 2 Devices</li>
+                
+                <li>✔ Unlimited Movies & Shows</li>
+                
+                <li>✔ Download Offline</li>
+                
+                <li>✔  No Cancellation Charges</li>
+            </ul>
+
+              <br>
+              <button>Subscribe Now</button>
+        </section>
+        <section class="card3">
+            <div class="badge">⭐ Most Popular</div>
+            <div class="logo">NETFLIX</div>
+            <h2 class="plan">Basic Plan</h2>
+            <div class="price">₹649 / Month</div>
+           <ul>
+                <li>✔ Full HD Quality</li>
+               
+                <li>✔ Watch on 2 Devices</li>
+                
+                <li>✔ Unlimited Movies & Shows</li>
+                
+                <li>✔ Download Offline</li>
+                
+                <li>✔  No Cancellation Charges</li>
+            </ul>
+            <br>
+            <button>Subscribe Now</button>
+        </section>
+
+    </div>
+</body>
+</html>
+
+
